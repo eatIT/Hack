@@ -29,6 +29,11 @@
 		9093BA4B1C78CC4B000F5A4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9093BA4A1C78CC4B000F5A4F /* SystemConfiguration.framework */; };
 		9093BA4D1C78CC51000F5A4F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9093BA4C1C78CC51000F5A4F /* libz.tbd */; };
 		9093BA4F1C78CC5A000F5A4F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9093BA4E1C78CC5A000F5A4F /* libsqlite3.tbd */; };
+		9093BA531C78CF70000F5A4F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9093BA521C78CF70000F5A4F /* logo.png */; };
+		9093BA5E1C78D28C000F5A4F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9093BA5C1C78D28C000F5A4F /* SignUpViewController.swift */; };
+		9093BA5F1C78D28C000F5A4F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9093BA5D1C78D28C000F5A4F /* SignUpViewController.xib */; };
+		9093BA621C78E47F000F5A4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9093BA601C78E47F000F5A4F /* LoginViewController.swift */; };
+		9093BA631C78E47F000F5A4F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9093BA611C78E47F000F5A4F /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 		9093BA4A1C78CC4B000F5A4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9093BA4C1C78CC51000F5A4F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9093BA4E1C78CC5A000F5A4F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9093BA521C78CF70000F5A4F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9093BA5C1C78D28C000F5A4F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9093BA5D1C78D28C000F5A4F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		9093BA601C78E47F000F5A4F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9093BA611C78E47F000F5A4F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +168,13 @@
 				9093BA0D1C78C7F5000F5A4F /* LaunchScreen.storyboard */,
 				9093BA321C78C800000F5A4F /* HomeViewController.swift */,
 				9093BA331C78C800000F5A4F /* HomeViewController.xib */,
+				9093BA601C78E47F000F5A4F /* LoginViewController.swift */,
+				9093BA611C78E47F000F5A4F /* LoginViewController.xib */,
+				9093BA5C1C78D28C000F5A4F /* SignUpViewController.swift */,
+				9093BA5D1C78D28C000F5A4F /* SignUpViewController.xib */,
 				9093BA101C78C7F5000F5A4F /* Info.plist */,
 				9093BA361C78C81D000F5A4F /* background.jpg */,
+				9093BA521C78CF70000F5A4F /* logo.png */,
 			);
 			path = eatIT;
 			sourceTree = "<group>";
@@ -289,8 +304,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9093BA631C78E47F000F5A4F /* LoginViewController.xib in Resources */,
 				9093BA0F1C78C7F5000F5A4F /* LaunchScreen.storyboard in Resources */,
 				9093BA371C78C81D000F5A4F /* background.jpg in Resources */,
+				9093BA531C78CF70000F5A4F /* logo.png in Resources */,
+				9093BA5F1C78D28C000F5A4F /* SignUpViewController.xib in Resources */,
 				9093BA0C1C78C7F5000F5A4F /* Assets.xcassets in Resources */,
 				9093BA0A1C78C7F5000F5A4F /* Main.storyboard in Resources */,
 				9093BA351C78C800000F5A4F /* HomeViewController.xib in Resources */,
@@ -318,8 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9093BA5E1C78D28C000F5A4F /* SignUpViewController.swift in Sources */,
 				9093BA071C78C7F5000F5A4F /* ViewController.swift in Sources */,
 				9093BA051C78C7F5000F5A4F /* AppDelegate.swift in Sources */,
+				9093BA621C78E47F000F5A4F /* LoginViewController.swift in Sources */,
 				9093BA341C78C800000F5A4F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
