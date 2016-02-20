@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     @IBOutlet weak var success_message: UILabel!
     
-    let user_type_array = ["parent", "student"]
+    let user_type_array = ["parent", "student", "establishment"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

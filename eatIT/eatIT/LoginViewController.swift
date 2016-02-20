@@ -48,7 +48,18 @@ class LoginViewController: UIViewController {
                         if let objects = objects {
                             for object in objects {
                                 let user_type = object.objectForKey("user_type") as! String;
-                                self.message.text = user_type
+                                if (user_type == "parent") {
+                                    let vc = ParentViewController(nibName: nil, bundle: nil)
+                                    self.presentViewController(vc, animated: true, completion: nil)
+                                }
+                                else if (user_type == "student") {
+                                    let vc = StudentViewController(nibName: nil, bundle: nil)
+                                    self.presentViewController(vc, animated: true, completion: nil)
+                                }
+                                else if (user_type == "establishment") {
+                                    let vc = EstablishmentViewController(nibName: nil, bundle: nil)
+                                    self.presentViewController(vc, animated: true, completion: nil)
+                                }
                             }
                         }
                     } else {
