@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = self.window{
             window.rootViewController = rootView
         }
+        
+        Parse.setApplicationId("qm602Cwpg5qbVQ4TNz9a7VkBRwdyqdVy4pAINcS7",
+            clientKey: "JWQkcwbFXMGiUa6XJcFYEqqhgsv9hb3iib8zWMnh")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         return true
     }
